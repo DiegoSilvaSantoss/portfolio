@@ -1,18 +1,3 @@
-alert(`
-    < > INFORMAÇÕES DO DESENVOLVEDOR
-
-    📢ATENÇÃO❗
-
-    👨‍🔧: Site em Manutenção.
-
-    🗃️: Vou colocar os projetos de fato, esses que estão no Portfólio são fotos ilustrativos... Vou pôr os projetos real e com modo de visualização. assim tendo uma melhor experiência.
-
-    ✔️: Projeto (Página de Viagens), Já funcionando.
-    ✔️: Projeto (Lojas de Carros), Já funcionando.
-    ❌: Projeto (Microsoft), Tá em andamento...
-    `)
-
-
 function enviarWhats(event) {
 
     event.preventDefault()
