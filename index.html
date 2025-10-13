@@ -80,13 +80,13 @@
     <section id="contato" class="contato">
         <h2 class="contato-titulo">Entre em Contato</h2>
 
-        <form id="formulario" class="formulario-contato">
+        <form id="formulario" class="formulario-contato" onsubmit="enviarWhats(event)">
             <div class="grupo-form">
-                <input placeholder="Nome" class="campo-form">
+                <input placeholder="Nome" class="campo-form" id="nome">
             </div>
 
             <div class="grupo-form">
-                <textarea class="campo-form" placeholder="Digite sua Mensagem"></textarea>
+                <textarea class="campo-form" placeholder="Digite sua Mensagem" id="mensagem" rows="5"></textarea>
             </div>
 
             <button type="submit" class="botao-form">Enviar Whatsapp</button>
