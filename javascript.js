@@ -13,3 +13,19 @@ function enviarWhats(event) {
 
     window.open(url, '_blank')
 }
+
+
+window.addEventListener('load', function() {
+  Swal.fire({
+    title: '😀| Novo Projeto em Breve!',
+    text: '☕| Cofe Page',
+    imageUrl: './img/cofer.PNG',
+    imageWidth: 500,
+    imageHeight: 250,
+    imageAlt: 'Imagem do Cofe Page',
+    confirmButtonText: 'Ok',
+    background: '#1e1e2f',
+    color: '#fff',
+    confirmButtonColor: '#9400D3'
+  });
+});
