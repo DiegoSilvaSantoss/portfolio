@@ -15,7 +15,7 @@ function enviarWhats(event) {
 }
 
 
-window.addEventListener('load', function() {
+/*window.addEventListener('load', function() {
   Swal.fire({
     title: '😀| Novo Projeto em Breve!',
     text: '☕| Cofe Page',
@@ -28,4 +28,4 @@ window.addEventListener('load', function() {
     color: '#fff',
     confirmButtonColor: '#9400D3'
   });
-});
+});*/
