@@ -15,17 +15,17 @@ function enviarWhats(event) {
 }
 
 
-/*window.addEventListener('load', function() {
+window.addEventListener('load', function() {
   Swal.fire({
-    title: '😀| Novo Projeto em Breve!',
-    text: '☕| Cofe Page',
-    imageUrl: './img/cofer.PNG',
+    title: '🆕| Novo Projeto Adicionado!',
+    text: 'PORTFOLIO CARROSEL ANIMADO',
+    imageUrl: './img/projeto5.PNG',
     imageWidth: 500,
     imageHeight: 250,
-    imageAlt: 'Imagem do Cofe Page',
+    imageAlt: 'Imagem do Portfolio',
     confirmButtonText: 'Ok',
     background: '#1e1e2f',
     color: '#fff',
     confirmButtonColor: '#9400D3'
   });
-});*/
+});
