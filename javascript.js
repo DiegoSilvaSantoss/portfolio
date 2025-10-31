@@ -17,7 +17,7 @@ function enviarWhats(event) {
 
 window.addEventListener('load', function() {
   Swal.fire({
-    title: '🆕| Novo Projeto Adicionado!',
+    title: '🆕|Projeto Adicionado!',
     text: 'PORTFOLIO CARROSEL ANIMADO',
     imageUrl: './img/projeto5.PNG',
     imageWidth: 500,
