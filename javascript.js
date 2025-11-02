@@ -1,3 +1,4 @@
+// ENVIAR MENSAGEM FORMATADA PRO WHATSAPP
 function enviarWhats(event) {
 
     event.preventDefault()
@@ -14,8 +15,8 @@ function enviarWhats(event) {
     window.open(url, '_blank')
 }
 
-
-window.addEventListener('load', function() {
+// NOTIFICAÇÃO POPUP PERSONALIZADO
+/*window.addEventListener('load', function() {
   Swal.fire({
     title: '🆕|Projeto Adicionado!',
     text: 'PORTFOLIO CARROSEL ANIMADO',
@@ -28,4 +29,4 @@ window.addEventListener('load', function() {
     color: '#fff',
     confirmButtonColor: '#9400D3'
   });
-});
+});*/
