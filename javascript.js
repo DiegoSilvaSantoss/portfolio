@@ -1,3 +1,26 @@
+const btn = document.querySelector('.btn-lateral')
+const btnLateral = document.querySelector('.botao-lateral')
+const menuLateral = document.querySelector('.navegacao')
+const backg = document.querySelector('.background')
+
+
+btn.addEventListener('click', () => {
+
+    btnLateral.classList.toggle('active')
+    menuLateral.classList.toggle('active')
+    backg.classList.toggle('active')
+})
+
+backg.addEventListener('click', () => {
+
+    btnLateral.classList.remove('active')
+    menuLateral.classList.remove('active')
+    backg.classList.toggle('active')
+})
+
+
+
+
 // ENVIAR MENSAGEM FORMATADA PRO WHATSAPP
 function enviarWhats(event) {
 
