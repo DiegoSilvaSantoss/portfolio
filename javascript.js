@@ -19,6 +19,15 @@ backg.addEventListener('click', () => {
 })
 
 
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 1200) {
+    btnTopo.classList.add('active');
+  } else {
+    btnTopo.classList.remove('active');
+  }
+})
+
+
 
 
 // ENVIAR MENSAGEM FORMATADA PRO WHATSAPP

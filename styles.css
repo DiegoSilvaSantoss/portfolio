@@ -307,6 +307,37 @@ h1 {
     opacity: 1;
 }
 
+.btn-topo {
+    position: fixed;
+    bottom: 20px;
+    left: 10px;
+    opacity: 0;
+    transition:  0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    & .btn-home {
+        background-color: var(--primaria);
+        border: none;
+        border-radius: 8px;
+        padding: 10px 15px;
+        cursor: pointer;
+        transition: 0.4s ease;
+
+        & i {
+            color: var(--claro);
+            transition: 0.5s ease;
+        }
+    }
+    & .btn-home:hover {
+        background-color: var(--secundaria);
+    }
+    & .btn-home:hover i {
+        transform: translateY(-3px) scale(1.2);
+    }
+}
+.btn-topo.active {
+    opacity: 1;
+}
+
 
 @keyframes flutuar {
     0%, 100% {
