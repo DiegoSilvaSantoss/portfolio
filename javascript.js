@@ -3,6 +3,7 @@ const btnLateral = document.querySelector('.botao-lateral')
 const menuLateral = document.querySelector('.navegacao')
 const backg = document.querySelector('.background')
 const btnTopo = document.querySelector('.btn-topo')
+const btnScrollHome = document.getElementById('btn-scroll-home')
 
 /* FICAR DE OLHO, QUANDO MEU BOTÃO LATERAL FOR CLICADO, ADICIONA AS CLASSES ACTIVE MO MEU MENU LATERAL,AÍ APARECE, E DESAPARECE SE CLICADO NOVAMENTE*/
 btn.addEventListener('click', () => {
@@ -31,6 +32,12 @@ window.addEventListener('scroll', () => {
   }
 })
 
+
+/* FICAR DE OLHO, QUANDO MEU BOTAO VOLTAR A HOME FOR CLICADO, VOLTARA LÁ PRO INÍCIO DO SITE */
+btnScrollHome.addEventListener('click', () => {
+
+  window.location.href = "#inicio"
+})
 
 
 
