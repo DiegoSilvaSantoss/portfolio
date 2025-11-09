@@ -4,22 +4,25 @@ const menuLateral = document.querySelector('.navegacao')
 const backg = document.querySelector('.background')
 const btnTopo = document.querySelector('.btn-topo')
 
-
+/* FICAR DE OLHO, QUANDO MEU BOTÃO LATERAL FOR CLICADO, ADICIONA AS CLASSES ACTIVE MO MEU MENU LATERAL,AÍ APARECE, E DESAPARECE SE CLICADO NOVAMENTE*/
 btn.addEventListener('click', () => {
 
     btnLateral.classList.toggle('active')
     menuLateral.classList.toggle('active')
     backg.classList.toggle('active')
+    document.body.classList.toggle('no-scroll')
 })
 
+/* FICAR DE OLHO, QUANDO CLICAR NA PARTE DO CONTEUDO, ONDE TEM MEU BACKGROUND NA FRENTE, REMOVE AS CLASSES ACTIVE, E MEU MENU LATERAL SOME */
 backg.addEventListener('click', () => {
 
     btnLateral.classList.remove('active')
     menuLateral.classList.remove('active')
-    backg.classList.toggle('active')
+    backg.classList.remove('active')
+    document.body.classList.remove('no-scroll')
 })
 
-
+/* FICAR DE OLHO NO MEU NAVEGADOR, QUANDO ATINGIR O PX DESEJADO NO SCROLL, ADICIONE A CLASSE ACTIVE E O BOTAO APARECE, E QUANDO SAIR DO PX ELE DESAPARECE */
 window.addEventListener('scroll', () => {
     if (window.scrollY > 1200) {
     btnTopo.classList.add('active');
