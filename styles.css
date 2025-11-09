@@ -130,6 +130,8 @@ body.no-scroll {
 }
 .botao-lateral.active {
     left: 310px;
+    position: fixed;
+    top: 30px;
 }
 
 
