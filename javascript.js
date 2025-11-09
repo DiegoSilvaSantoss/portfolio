@@ -2,6 +2,7 @@ const btn = document.querySelector('.btn-lateral')
 const btnLateral = document.querySelector('.botao-lateral')
 const menuLateral = document.querySelector('.navegacao')
 const backg = document.querySelector('.background')
+const btnTopo = document.querySelector('.btn-topo')
 
 
 btn.addEventListener('click', () => {
