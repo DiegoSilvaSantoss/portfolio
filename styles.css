@@ -92,8 +92,9 @@ body.no-scroll {
 .navegacao.active {
     left: 0;
 }
-body.menu-aberto {
-    overflow: hidden;
+.navegacao:hover {
+    box-shadow: 6px 3px 12px 1px #7C3AED;
+    transition: 0.7s ease;
 }
 
 
