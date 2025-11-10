@@ -58,18 +58,19 @@ function enviarWhats(event) {
     window.open(url, '_blank')
 }
 
-// NOTIFICAÇÃO POPUP PERSONALIZADO
-/*window.addEventListener('load', function() {
+// NOTIFICAÇÃO POPUP PERSONALIZADO 
+window.addEventListener('load', function() {
   Swal.fire({
-    title: '🆕|Projeto Adicionado!',
-    text: 'PORTFOLIO CARROSEL ANIMADO',
-    imageUrl: './img/projeto5.PNG',
+    title: '< > Informações do Desenvolvedor',
+    text: `
+  🛠️| Olá! Estamos realizando melhorias no site para torná-lo ainda mais fluido e visualmente impactante.`,
+    /*imageUrl: './img/projeto5.PNG',
     imageWidth: 500,
     imageHeight: 250,
-    imageAlt: 'Imagem do Portfolio',
+    imageAlt: 'Imagem do Portfolio',*/
     confirmButtonText: 'Ok',
     background: '#1e1e2f',
     color: '#fff',
     confirmButtonColor: '#9400D3'
   });
-});*/
+});
