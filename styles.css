@@ -18,6 +18,7 @@ html {
     --maisEscuro: #0a0f1c;
     --claro: #e2e8f0;
     --vidro: rgb(255, 255, 255, 0.1);
+    --transition-5s-ease: 0.5s ease;
 }
 
 body {
@@ -29,112 +30,115 @@ body.no-scroll {
     overflow: hidden;
 }
 
-.navegacao {
+.btn-lateral {
     position: fixed;
-    top: 0;
-    left: -300px;
-    z-index: 5;
-    width: 300px;
-    height: 100vh;
-    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-}
-
-.navegacao:hover {
-    box-shadow: 6px 3px 12px 1px #7C3AED;
-    transition: 0.7s ease;
-}
-
-.navegacao.active {
-    left: 0;
-}
-
-.navegacao nav {
-    width: 100%;
-    height: 100%;
-    background-color: var(--maisEscuro);
-    padding-top: 90px;
-}
-
-.navegacao nav ul li {
-    width: 40%;
-    padding: 12px 15px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    position: relative;
-}
-
-.navegacao nav ul li a {
-    display: flex;
-    gap: 10px;
-    color: var(--claro);
-    cursor: pointer;
-    position: relative;
-    z-index: 2;
-}
-
-.navegacao nav ul li a i {
-    font-size: 1.2rem;
-    transition: transform 0.5s ease;
-}
-
-.navegacao nav ul li:hover i {
-    transform: translate(5px) rotate(20deg);
-}
-
-
-.navegacao nav ul li::after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    background-color: var(--secundaria);
-    border-radius: 0 30% 30% 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.navegacao nav ul li:hover::after {
-    width: 40%;
-}
-
-.botao-lateral {
-    position: absolute;
-    z-index: 5;
+    z-index: 100;
     top: 30px;
     left: 30px;
-    transition: 0.5s ease;
-}
-
-.botao-lateral.active {
-    left: 310px;
-    position: fixed;
-    top: 30px;
-}
-
-.botao-lateral .btn-lateral {
-    padding: 5px 10px;
+    width: 40px;
+    height: 40px;
     border: none;
-    border-radius: 7px;
-    background-color: var(--primaria);
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
     cursor: pointer;
-    transition: 0.4s ease;
 }
 
-.botao-lateral .btn-lateral i {
-    font-size: 1.5rem;
-    color: var(--claro);
-    transition: 0.5s ease;
+.btn-lateral span {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: var(--primaria);
+    border-radius: 5px;
+    transition: var(--transition-5s-ease);
 }
 
-.botao-lateral .btn-lateral:hover {
+.btn-lateral:hover span {
     background-color: var(--secundaria);
+    transform: translateY(-5px) scale(1.1);
 }
 
-.botao-lateral .btn-lateral:hover i {
-    transform: translateY(-2px) scale(1.2);
+.btn-lateral span:nth-child(2){
+    top: 10px;
 }
+
+.btn-lateral span:nth-child(3){
+    top: 20px;
+}
+
+.active span:nth-child(1) {
+    transform: translateY(13px) rotate(40deg);
+}
+
+.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.active span:nth-child(3) {
+    transform: translateY(-13px) rotate(-40deg);
+}
+
+
+.menu-lateral {
+    position: fixed;
+    z-index: 10;
+    top: 65px;
+    left: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: var(--maisEscuro);
+    transform: translateY(-600px);
+    border-radius: 10px;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.menu-lateral.active {
+    transform: translateY(0);
+}
+
+.menu-lateral ul {
+    padding: 0;
+}
+
+.menu-lateral ul li {
+    position: relative;
+    padding: 12px 7px;
+    width: 50%;
+    z-index: 1;
+    cursor: pointer;
+    /*border: solid 1px;*/
+}
+.menu-lateral ul li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    z-index: -1;
+    background-color: var(--secundaria);
+    border-top-right-radius: 20px;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.300);
+}
+.menu-lateral ul li:hover::after {
+    width: 40%;
+}
+
+.menu-lateral ul li:hover i {
+    transform: translateX(5px) rotate(15deg);
+}
+
+.menu-lateral ul li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--claro);
+}
+
+.menu-lateral ul li a i {
+    font-size: 20px;
+    transition: var(--transition-5s-ease);
+}
+
 
 .foto-perfil {
     width: 170px;
@@ -216,7 +220,7 @@ body.no-scroll {
     backdrop-filter: blur(5px);
     border: 1px solid var(--vidro);
     overflow: hidden;
-    transition: all 0.5s ease;
+    transition: var(--transition-5s-ease);
     cursor: pointer;
 }
 
@@ -290,7 +294,7 @@ body.no-scroll {
     cursor: pointer;
     font-weight: bold;
     width: 100%;
-    transition: all 0.5s ease;
+    transition: var(--transition-5s-ease);
 }
 
 .contato .formulario-contato .botao-form:hover {
@@ -304,10 +308,10 @@ body.no-scroll {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: var(--vidro);
+    background-color: transparent;
     visibility: hidden;
     opacity: 0;
-    transition: 0.5s ease;
+    transition: var(--transition-5s-ease);
 }
 
 .background.active {
@@ -335,7 +339,7 @@ body.no-scroll {
     border-radius: 8px;
     padding: 10px 15px;
     cursor: pointer;
-    transition: 0.4s ease;
+    transition: var(--transition-5s-ease);
 }
 
 .btn-topo .btn-home i {

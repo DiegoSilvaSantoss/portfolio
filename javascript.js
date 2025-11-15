@@ -1,26 +1,22 @@
-const btn = document.querySelector('.btn-lateral')
-const btnLateral = document.querySelector('.botao-lateral')
-const menuLateral = document.querySelector('.navegacao')
-const backg = document.querySelector('.background')
+const btnLateral = document.querySelector('.btn-lateral')
+const menuLateral = document.querySelector('.menu-lateral')
+const background = document.querySelector('.background')
 const btnTopo = document.querySelector('.btn-topo')
-const btnScrollHome = document.getElementById('btn-scroll-home')
 
 /* FICAR DE OLHO, QUANDO MEU BOTÃO LATERAL FOR CLICADO, ADICIONA AS CLASSES ACTIVE MO MEU MENU LATERAL,AÍ APARECE, E DESAPARECE SE CLICADO NOVAMENTE*/
-btn.addEventListener('click', () => {
-
-    btnLateral.classList.toggle('active')
-    menuLateral.classList.toggle('active')
-    backg.classList.toggle('active')
-    document.body.classList.toggle('no-scroll')
+btnLateral.addEventListener('click', () => {
+  btnLateral.classList.toggle('active')
+  menuLateral.classList.toggle('active')
+  background.classList.toggle('active')
+  document.body.classList.toggle('no-scroll')
 })
 
 /* FICAR DE OLHO, QUANDO CLICAR NA PARTE DO CONTEUDO, ONDE TEM MEU BACKGROUND NA FRENTE, REMOVE AS CLASSES ACTIVE, E MEU MENU LATERAL SOME */
-backg.addEventListener('click', () => {
-
-    btnLateral.classList.remove('active')
-    menuLateral.classList.remove('active')
-    backg.classList.remove('active')
-    document.body.classList.remove('no-scroll')
+background.addEventListener('click', () => {
+  btnLateral.classList.remove('active')
+  menuLateral.classList.remove('active')
+  background.classList.remove('active')
+  document.body.classList.remove('no-scroll')
 })
 
 /* FICAR DE OLHO NO MEU NAVEGADOR, QUANDO ATINGIR O PX DESEJADO NO SCROLL, ADICIONE A CLASSE ACTIVE E O BOTAO APARECE, E QUANDO SAIR DO PX ELE DESAPARECE */
@@ -34,7 +30,7 @@ window.addEventListener('scroll', () => {
 
 
 /* FICAR DE OLHO, QUANDO MEU BOTAO VOLTAR A HOME FOR CLICADO, VOLTARA LÁ PRO INÍCIO DO SITE */
-btnScrollHome.addEventListener('click', () => {
+btnTopo.addEventListener('click', () => {
 
   window.location.href = "#inicio"
 })
@@ -62,8 +58,10 @@ function enviarWhats(event) {
 window.addEventListener('load', function() {
   Swal.fire({
     title: '< > Informações do Desenvolvedor',
-    text: `
-  🛠️| Olá! Estamos realizando melhorias no site para torná-lo ainda mais fluido e visualmente impactante.`,
+    html: `<div style="text-align: left;">
+      🛠️| Olá! Estamos realizando melhorias no site para torná-lo ainda mais fluido e visualmente impactante.<br><br>
+      ✔️| Novo menu implementado.
+    </div>`,
     /*imageUrl: './img/projeto5.PNG',
     imageWidth: 500,
     imageHeight: 250,
