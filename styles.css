@@ -15,6 +15,7 @@ html {
     --primaria: #4f46e5;
     --secundaria: #7c3aed;
     --escuro: #0f172a;
+    --azul: rgb(16, 56, 255);
     --maisEscuro: #0a0f1c;
     --claro: #e2e8f0;
     --vidro: rgb(255, 255, 255, 0.1);
@@ -86,7 +87,7 @@ body.no-scroll {
     left: 20px;
     width: 200px;
     height: 200px;
-    background-color: var(--maisEscuro);
+    background: linear-gradient(124deg,rgba(2, 0, 36, 1) 0%, rgb(0, 0, 0) 35%, rgb(36, 5, 63) 100%);
     transform: translateY(-600px);
     border-radius: 10px;
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
@@ -302,6 +303,66 @@ body.no-scroll {
     transform: translateY(-4px);
     box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
 }
+
+.rodape {
+    width: 100%;
+    height: 200px;
+}
+
+.rodape .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--maisEscuro);
+}
+
+.rodape .content p {
+    position: relative;
+    top: 50%;
+    transform: translate(-50% -50%);
+    text-align: center;
+}
+
+.rodape .content .redes-sociais {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    top: 20px;
+}
+
+.rodape .content .redes-sociais a {
+    color: var(--claro);
+    transition: var(--transition-5s-ease);
+}
+
+.rodape .content .redes-sociais a i {
+    position: relative;
+    z-index: 1;
+    font-size: 30px;
+}
+
+.rodape .content .redes-sociais a:hover {
+    transform: translateY(-5px) scale(1.1);
+}
+
+.rodape .content .redes-sociais a:nth-child(1) i {
+    color: var(--azul);
+}
+
+.rodape .content .redes-sociais a:nth-child(1) i::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 2px;
+    left: 2px;
+    width: 90%;
+    height: 80%;
+    background-color: var(--claro);
+}
+
 
 .background {
     position: fixed;
