@@ -61,7 +61,7 @@ window.addEventListener('load', function() {
     html: `<div style="text-align: left;">
       👋| Bem-vindo!
       É um prazer ter você aqui no meu portfólio!<br><br>
-      🛠️| Estamos realizando melhorias no site para torná-lo ainda mais fluido e visualmente impactante.<br><br>
+      🛠️| Ajustando tudo por aqui! Estou trabalhando nas melhorias de responsividade dos sites. Se algo parecer fora do lugar, é só temporário. Já já tudo volta ao normal! 😉<br><br>
       ☰| Novo menu implementado.<br><br>
       
     </div>`,
