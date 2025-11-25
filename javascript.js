@@ -59,7 +59,7 @@ window.addEventListener('load', function() {
   Swal.fire({
     title: '< > Informações do Desenvolvedor',
     html: `<div style="text-align: left;">
-      👋| Bem-vindo!
+      👋| Bem-vindo(a)!
       É um prazer ter você aqui no meu portfólio!<br><br>
       🛠️| Ajustando tudo por aqui! Estou trabalhando nas melhorias de responsividade dos sites. Se algo parecer fora do lugar, é só temporário. Já já tudo volta ao normal! 😉<br><br>
       ☰| Novo menu implementado.<br><br>
