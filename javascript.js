@@ -2,12 +2,14 @@ const btnLateral = document.querySelector('.btn-lateral');
 const menuLateral = document.querySelector('.menu-lateral');
 const background = document.querySelector('.background');
 const btnTopo = document.querySelector('.btn-topo');
+const header = document.querySelector('header');
 
 /* FICAR DE OLHO, QUANDO MEU BOTÃO LATERAL FOR CLICADO, ADICIONA AS CLASSES ACTIVE MO MEU MENU LATERAL,AÍ APARECE, E DESAPARECE SE CLICADO NOVAMENTE*/
 btnLateral.addEventListener('click', () => {
   btnLateral.classList.toggle('active');
   menuLateral.classList.toggle('active');
   background.classList.toggle('active');
+  header.classList.toggle('active')
   document.body.classList.toggle('no-scroll');
 })
 
@@ -16,6 +18,7 @@ background.addEventListener('click', () => {
   btnLateral.classList.remove('active');
   menuLateral.classList.remove('active');
   background.classList.remove('active');
+  header.classList.remove('active')
   document.body.classList.remove('no-scroll');
 })
 
@@ -44,7 +47,7 @@ function enviarWhats(event) {
 
     const nome = document.getElementById('nome').value;
     const mensagem = document.getElementById('mensagem').value;
-    const telefone = '5563999789035'
+    const telefone = '5563999789035';
 
     const texto = `Olá! Me chamo ${nome}, ${mensagem}`;
     const msgFormatada = encodeURIComponent(texto);
