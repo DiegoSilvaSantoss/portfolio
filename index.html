@@ -13,7 +13,9 @@
 </head>
 
 <body>
+
     <header>
+
         <button class="btn-lateral">
             <span></span>
             <span></span>
@@ -21,166 +23,43 @@
         </button>
 
         <nav class="menu-lateral">
+
             <ul>
                 <li>
-                    <a href="#inicio">
-                        <i class="fa-solid fa-house"></i>
+                    <a href="#">
+                        <i class="bi bi-house-fill"></i>
                         Início
                     </a>
                 </li>
 
                 <li>
-                    <a href="#sobre">
-                        <i class="fa-solid fa-circle-info"></i>
+                    <a href="#">
+                        <i class="bi bi-file-earmark-person-fill"></i>
                         Sobre
                     </a>
                 </li>
 
                 <li>
-                    <a href="#projetos">
-                        <i class="fa-solid fa-gears"></i>
+                    <a href="#">
+                        <i class="bi bi-gear-fill"></i>
                         Projetos
                     </a>
                 </li>
 
                 <li>
-                    <a href="#contato">
-                        <i class="fa-solid fa-phone"></i>
+                    <a href="#">
+                        <i class="bi bi-telephone-fill"></i>
                         Contato
                     </a>
                 </li>
             </ul>
+
         </nav>
+
     </header>
 
-    <main id="inicio" class="cabecalho">
-        <img src="./img/IMG_20250920_210316_113.webp" alt="foto de Diego silva" class="foto-perfil">
-        <h1>Diego Silva</h1>
-        <p class="cabecalho-paragrafo">Desenvolvedor Front End</p>
-    </main>
-
-    <section id="sobre" class="sobre">
-        <h2 class="sobre-titulo">Sobre Mim</h2>
-        <div class="sobre-caixa">
-            <p class="sobre-paragrafo">
-                Olá! Sou um desenvolvedor front-end apaixonado por criar esperiências
-                Web únicas e memoráveis. Combino códico limpo com desing moderno
-                para desenvolver sites que não só funcionam perfeitamente, mas também
-                impressionam visualmente.
-            </p>
-        </div>
-    </section>
-
-    <section id="projetos" class="projetos">
-        <h2 class="projeto-titulo">Meus Projetos</h2>
-        <div class="projetos-caixa">
-
-            <div class="projetos-card" onclick="window.open('https://diegosilvasantoss.github.io/CarsPage/', '_blank')">
-                <img src="./img/projeto1.png" alt="Projeto-1" class="projeto-imagem">
-                <div class="caixa-textos-projeto">
-                    <h3 class="info-projetos">Loja de Carros</h3>
-                    <p class="paragrafo-projetos">Loja virtual moderna com animações suaves e desing responsivo para uma
-                        loja de carros de luxo.</p>
-                </div>
-            </div>
-
-            <div class="projetos-card"
-                onclick="window.open('https://diegosilvasantoss.github.io/TravelPage/', '_blank')">
-                <img src="./img/projeto2.png" alt="Projeto-2" class="projeto-imagem">
-                <div class="caixa-textos-projeto">
-                    <h3 class="info-projetos">Página de Viagens</h3>
-                    <p class="paragrafo-projetos">Uma página interativo com roteiros de viagem mais cobiçados do mundo.
-                    </p>
-                </div>
-            </div>
-
-            <div class="projetos-card"
-                onclick="window.open('https://diegosilvasantoss.github.io/AnimatedSideMenu/', '_blank')">
-                <img src="./img/projeto3.png" alt="Projeto-3" class="projeto-imagem">
-                <div class="caixa-textos-projeto">
-                    <h3 class="info-projetos">Menu Lateral Animado</h3>
-                    <p class="paragrafo-projetos">O menu lateral foi desenvolvido com foco em usabilidade, design e
-                        animação, garantindo uma navegação fluida.</p>
-                </div>
-            </div>
-
-            <div class="projetos-card" onclick="window.open('https://diegosilvasantoss.github.io/CofePage/', '_blank')">
-                <img src="./img/projeto4.PNG" alt="Projeto 4" class="projeto-imagem">
-                <div class="caixa-textos-projeto">
-                    <h3 class="info-projetos">Página de Cafetaria</h3>
-                    <p class="paragrafo-projetos">Um site moderno e responsivo desenvolvido para apresentar uma
-                        cafeteria fictícia voltada ao público tech. A ideia central é unir o universo da programação com
-                        o café, criando uma identidade visual envolvente e acolhedora.</p>
-                </div>
-            </div>
-
-            <div class="projetos-card"
-                onclick="window.open('https://diegosilvasantoss.github.io/CarouselPortfolio/', '_blank')">
-                <img src="./img/projeto5.PNG" alt="Projeto 5" class="projeto-imagem">
-                <div class="caixa-textos-projeto">
-                    <h3 class="info-projetos">Página Portfólio Carrossel Animado</h3>
-                    <p class="paragrafo-projetos">O portfólio Carrossel Aniamdo é visual interativo, projetado em HTML e
-                        CSS puro, que exibe dois carrosséis de imagens animadas se movendo automaticamente, um para cada
-                        conjunto de imagens. Ele tem um visual moderno e limpo, com foco em movimento e exibição de
-                        trabalhos.</p>
-                </div>
-            </div>
-
-            <div class="projetos-card"
-                onclick="window.open('https://diegosilvasantoss.github.io/to-do-list/', '_blank')">
-                <img src="./img/projeto6.PNG" alt="Projeto 6" class="projeto-imagem">
-                <div class="caixa-textos-projeto">
-                    <h3 class="info-projetos">Página Lista de Tarefas (To-Do List)</h3>
-                    <p class="paragrafo-projetos">Este projeto é uma Lista de Tarefas (To-Do List) totalmente interativa, desenvolvida com HTML, CSS e JavaScript puro, focada em oferecer uma experiência fluida, moderna e dinâmica ao usuário.
-A interface conta com animações, ícones funcionais e um sistema completo de persistência de dados usando LocalStorage.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contato" class="contato">
-        <h2 class="contato-titulo">Entre em Contato</h2>
-
-        <form id="formulario" class="formulario-contato" onsubmit="enviarWhats(event)">
-            <div class="grupo-form">
-                <input placeholder="Nome" class="campo-form" id="nome" required>
-            </div>
-
-            <div class="grupo-form">
-                <textarea class="campo-form" placeholder="Digite sua Mensagem" id="mensagem" rows="5"
-                    required></textarea>
-            </div>
-
-            <button type="submit" class="botao-form">Enviar Whatsapp</button>
-        </form>
-
-    </section>
-
-    <section class="rodape">
-        <div class="content">
-            <div class="redes-sociais">
-                <a href="https://www.linkedin.com/feed/" target="_blank">
-                    <i class="bi bi-linkedin"></i>
-                </a>
-
-                <a href="https://github.com/DiegoSilvaSantoss" target="_blank">
-                    <i class="bi bi-github"></i>
-                </a>
-            </div>
-
-            <p>© 2025 Diego Silva — Todos os direitos reservados.</p>
-        </div>
-    </section>
-
-    <div class="background"></div>
-
-    <div class="btn-topo">
-        <button id="btn-scroll-home" class="btn-home">
-            <i class="fa-solid fa-arrow-up"></i>
-        </button>
-    </div>
-
 </body>
-<script src="javascript.js"></script>
+<script src="./javascript.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </html>
