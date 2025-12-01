@@ -337,7 +337,6 @@ body .rodape .content .redes-sociais a {
   transition: var(--transition-a-rodape);
 }
 body .rodape .content .redes-sociais a i {
-  position: relative;
   z-index: 1;
   font-size: 40px;
 }
@@ -346,6 +345,7 @@ body .rodape .content .redes-sociais a:hover {
 }
 body .rodape .content .redes-sociais a:nth-child(1) i {
   color: var(--color-icon-linkedin);
+  position: relative;
 }
 body .rodape .content .redes-sociais a:nth-child(1) i::after {
   content: "";

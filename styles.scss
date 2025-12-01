@@ -396,7 +396,6 @@ body {
                     transition: var(--transition-a-rodape);
 
                     & i {
-                        position: relative;
                         z-index: 1;
                         font-size: 40px;
                     }
@@ -408,6 +407,7 @@ body {
 
                 & a:nth-child(1) i {
                     color: var(--color-icon-linkedin);
+                    position: relative;
                 }
 
                 & a:nth-child(1) i::after {
