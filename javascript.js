@@ -58,7 +58,7 @@ function enviarWhats(event) {
 }
 
 // NOTIFICAÇÃO POPUP PERSONALIZADO 
-/*window.addEventListener('load', function() {
+window.addEventListener('load', function() {
   Swal.fire({
     title: '< > Informações do Desenvolvedor',
     html: `<div style="text-align: left;">
@@ -69,10 +69,10 @@ function enviarWhats(event) {
     /*imageUrl: './img/projeto5.PNG',
     imageWidth: 500,
     imageHeight: 250,
-    imageAlt: 'Imagem do Portfolio',
+    imageAlt: 'Imagem do Portfolio',*/
     confirmButtonText: 'Ok',
-    background: '#1e1e2f',
+    background: '#233e24ff',
     color: '#fff',
-    confirmButtonColor: '#9400D3'
+    confirmButtonColor: '#00be00ff'
   });
-});*/
+});
