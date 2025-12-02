@@ -347,7 +347,7 @@ body {
 
             & .botao-form {
                 color: var(--color-botao-form);
-                background: linear-gradient(90deg,rgba(0, 36, 16, 1) 0%, rgba(16, 121, 9, 1) 35%, rgba(0, 28, 2, 1) 100%);
+                background: linear-gradient(90deg, rgba(0, 36, 16, 1) 0%, rgba(16, 121, 9, 1) 35%, rgba(0, 28, 2, 1) 100%);
                 padding: 1rem 2rem;
                 border: none;
                 border-radius: 8px;
@@ -414,7 +414,7 @@ body {
                     content: '';
                     position: absolute;
                     z-index: -1;
-                    top: 9px;
+                    top: 10px;
                     left: 1px;
                     width: 90%;
                     height: 60%;
@@ -484,6 +484,33 @@ body {
 
 body.no-scroll {
     overflow: hidden;
+}
+
+
+@media only screen and (max-width: 648px) {
+    body {
+        & .rodape {
+
+            & .content {
+
+                & .redes-sociais {
+
+                    & a:nth-child(1) i::after {
+                        content: '';
+                        position: absolute;
+                        z-index: -1;
+                        top: 8px;
+                        left: 1px;
+                        width: 90%;
+                        height: 60%;
+                        background-color: var(--color-icon-linkedin-after);
+                    }
+                }
+            }
+        }
+    }
+
+
 }
 
 
