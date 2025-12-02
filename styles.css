@@ -351,7 +351,7 @@ body .rodape .content .redes-sociais a:nth-child(1) i::after {
   content: "";
   position: absolute;
   z-index: -1;
-  top: 10px;
+  top: 9px;
   left: 1px;
   width: 90%;
   height: 60%;
