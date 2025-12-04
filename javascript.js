@@ -63,7 +63,8 @@ window.addEventListener('load', function() {
     title: '< > Informações do Desenvolvedor',
     html: `<div style="text-align: left;">
       🛠️| Olá! Estamos realizando melhorias no site para torná-lo ainda mais fluido e visualmente impactante.<br><br>
-      ☰| Novo menu implementado.<br><br>
+      ☰ | Novo menu implementado.<br><br>
+      🚀| Em desenvolvimento: novidades e novos projetos chegando!
       
     </div>`,
     /*imageUrl: './img/projeto5.PNG',
