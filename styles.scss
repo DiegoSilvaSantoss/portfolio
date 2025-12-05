@@ -262,7 +262,7 @@ body {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
-            max-width: 1200px;
+            max-width: 500px; // <--QUANDO ADD MAIS PROJETOS, REAJUSTAR PRA 1200PX.
             margin: 0 auto;
 
             & .projetos-card {
